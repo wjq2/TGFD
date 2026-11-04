@@ -50,7 +50,6 @@ def twminev_slices(events, dt_ms, n_min):
         t += dt
     return slices
 
-# Public method name; keep the original name for source comparisons.
 aow_slices = twminev_slices
 
 

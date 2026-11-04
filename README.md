@@ -23,13 +23,14 @@ pip install -r requirements.txt
 
 For AEDAT4 files, also install `aedat` with `pip install aedat`.
 
+
 ## Datasets
 
-- **DND21:** available through [EDformer](https://github.com/NJUVISION/EDformer#datasets-preparation).
-- **E-MLB:** available from the [original project](https://github.com/KugaMaxx/cuke-emlb#datasets).
-- **DVSNOISE20:** available through [EDnCNN](https://github.com/bald6354/edncnn#dvsnoise20-dataset-optional).
+- **DND21:** [Original paper](https://doi.org/10.1109/TPAMI.2022.3152999).
+- **E-MLB:** [Original paper](https://doi.org/10.1109/TMM.2023.3260638).
+- **DVSNOISE20:** [Original paper](https://doi.org/10.1109/CVPR42600.2020.00177).
 
-Obtain recordings from their original providers and place them in `data/`.
+Please refer to the paper for dataset details and experimental settings.
 
 ## Usage
 

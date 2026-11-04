@@ -48,4 +48,4 @@ See [usage instructions](docs/usage.md) for more details.
 
 ## Contact
 
-If you have any questions about our work or code, please email [Jiaqi Wang](mailto:wangjiaqi02@hotmail.com).
+If you have any questions about our work or code, please email wangjiaqi02@hotmail.com.

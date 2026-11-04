@@ -1,13 +1,4 @@
-"""NumPy adapter for the original E-MLB EventStructuralRatio metric.
 
-Adapted from KugaMaxx/cuke-emlb, python/src/utils/metric.py,
-commit 105a1c36c368f10ff63b4a6f862992ae8842628d (MIT).
-Copyright (c) 2023 Kuga Maxx. See docs/credits.md for the original license.
-
-Only accumulation is replaced: bincount produces the no-decay,
-unit-contribution, polarity-ignored surface used by the original class.
-No median filtering or EventStructuralRatioV2 scaling is applied.
-"""
 import numpy as np
 
 

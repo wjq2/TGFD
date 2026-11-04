@@ -24,7 +24,7 @@ For AEDAT4 files, also install `aedat` with `pip install aedat`.
 
 ## Datasets
 
-- **DND21:** [Download via EDformer](https://github.com/NJUVISION/EDformer#datasets-preparation).  
+- **DND21:** [Dataset and project](https://github.com/SensorsINI/dnd21).  
   Paper: [Low Cost and Latency Event Camera Background Activity Denoising](https://doi.org/10.1109/TPAMI.2022.3152999).
 
 - **E-MLB:** [Dataset and project](https://github.com/KugaMaxx/cuke-emlb#datasets).  

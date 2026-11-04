@@ -7,7 +7,7 @@ from tgfd.core.config import Config
 from tgfd.io.events import validate_events
 from tgfd.core.windowing import make_windows
 from tgfd.core.topology import build_topology_prior
-from tgfd.core.temporal import compute_history_first_future, spatial_support_ebe
+from tgfd.core.temporal import compute_temporal_support, spatial_support_ebe
 
 
 def process_window(events, resolution, skip_fine=False, *, alpha=1.0,
@@ -42,12 +42,13 @@ def process_window(events, resolution, skip_fine=False, *, alpha=1.0,
         prior.event_node_ids,
         tau_us=tau_us,
         radius=radius,
+        weighting="hyperbolic",
     )
 
 
 def warmup():
     """Compile the scoring kernel before timing a run."""
-    compute_history_first_future(
+    compute_temporal_support(
         np.array([0, 1], np.int32),
         np.array([0, 0], np.int32),
         np.array([0.0, 1.0], np.float64),
@@ -57,6 +58,7 @@ def warmup():
         2,
         4000.0,
         2,
+        0,
     )
 
 

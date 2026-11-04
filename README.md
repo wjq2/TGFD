@@ -43,7 +43,7 @@ python run.py denoise \
 
 Add `--mode lite` for TGFD-Lite.
 
-See [usage instructions](docs/usage.md) for more details.
+
 
 ## Contact
 

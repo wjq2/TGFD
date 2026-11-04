@@ -10,8 +10,6 @@ the original event stream to guide event-by-event denoising.
 - **TGFD-Lite:** filters events using only the mapped topology prior.
 - **TGFD:** uses the topology prior to guide event-by-event denoising with temporal support.
 
-This release includes the complete TGFD and TGFD-Lite denoising pipeline,
-windowing strategies and evaluation tools.
 
 ## Environment
 

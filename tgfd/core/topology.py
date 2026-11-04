@@ -33,7 +33,7 @@ def extract_features(events, resolution):
     return {'input_valid': input_valid, 'xs': xs, 'ys': ys, 'n_nodes': n_nodes, 'id_map': id_map, 'id_p': np.pad(id_map, pad, constant_values=-1), 'mask_p': np.pad(active, pad), 'Con_p': np.pad(C_on, pad), 'Coff_p': np.pad(C_off, pad), 'Pol_p': np.pad(pol_map, pad)}
 
 def thresh_confidence(w, k=1.0):
-    """Return the nonnegative mean-plus-k-standard-deviation edge threshold."""
+  
     return max(0.0, float(np.mean(w) + k * np.std(w)))
 
 @dataclass
@@ -46,7 +46,7 @@ class TopologyPrior:
 
 
 def build_topology_prior(events, resolution, *, alpha=1.0, min_component_size=2, eps=1e-5):
-    """Generate the window prior using the source-compatible edge pruning rule."""
+    
     feat = extract_features(events, resolution)
     if feat is None:
         return None
